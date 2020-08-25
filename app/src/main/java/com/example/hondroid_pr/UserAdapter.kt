@@ -25,18 +25,20 @@ class UserAdapter (val context: Context, val UserList: ArrayList<User>) : BaseAd
         name.text = user.name
         age.text = user.age
         greet.text = user.greet
+
+        return view
     }
 
     override fun getItem(position: Int): Any {
-
+        return UserList[position]
     }
 
     override fun getItemId(position: Int): Long {
-
+        return 0
     }
 
     override fun getCount(): Int {
-
+        return UserList.size
     }
 
 }
