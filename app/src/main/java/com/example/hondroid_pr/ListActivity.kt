@@ -11,9 +11,11 @@ class ListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
 
-        val item = arrayOf("지향", "용", "지원", "기마", "준형")
+//        val item = arrayOf("지향", "용", "지원", "기마", "준형")
+//
+//        // Context란 한 액티비티의 모든 정보를 담고 있음
+//        listView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, item) // adapter가 있어야만 리스트뷰 만들 수 있음
 
-        // Context란 한 액티비티의 모든 정보를 담고 있음
-        listView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, item) // adapter가 있어야만 리스트뷰 만들 수 있음
+
     }
 }
